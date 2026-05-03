@@ -1,3 +1,7 @@
+
+<img width="1983" height="793" alt="ChatGPT Image May 3, 2026, 04_37_26 PM" src="https://github.com/user-attachments/assets/8a77b1a7-795f-4da0-9063-aaa9f193130f" />
+<br>
+
 <div align="center">
 
 <img src="https://img.shields.io/badge/TypeScript-Full%20Stack-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
@@ -8,7 +12,7 @@
 <img src="https://img.shields.io/badge/Docker-Container%20Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/License-Proprietary-FF0000?style=for-the-badge"/>
 
-<br/><br/>
+<br/>
 
 # 🏥 MediNexus SaaS
 ### *Clinic Management Platform*
