@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  title: MediNexus API
+  description: Clinic Management SaaS API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api
+paths:
+  /auth/register:
+    post:
+      summary: Register a new clinic admin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+                clinicName: { type: string }
+                firstName: { type: string }
+                lastName: { type: string }
+      responses:
+        200:
+          description: Registration successful
+  /auth/login:
+    post:
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string }
+                password: { type: string }
+      responses:
+        200:
+          description: Returns JWT token
+  /patients:
+    get:
+      summary: List patients
+      security:
+        - bearerAuth: []
+      responses:
+        200:
+          description: List of patients (non-sensitive data)
+    post:
+      summary: Create patient
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                firstName: { type: string }
+                lastName: { type: string }
+                medicalHistory: { type: string }
+      responses:
+        200:
+          description: Patient created
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

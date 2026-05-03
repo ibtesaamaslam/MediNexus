@@ -1,0 +1,8 @@
+{
+  "name": "MediNexus SaaS",
+  "description": "MediNexus is a secure, multi-tenant SaaS platform designed for modern clinics. It integrates HIPAA-compliant patient record management with field-level encryption, role-based access control, and real-time appointment scheduling. The system features an AI-powered clinical assistant for SOAP note summarization, comprehensive billing and invoicing modules, and telehealth capabilities. Built for scalability with a React frontend and Node.js backend, MediNexus streamlines healthcare operations while ensuring data privacy and operational efficiency.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
